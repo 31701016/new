@@ -1,0 +1,29 @@
+server:
+  port: 8889
+spring:
+  data:
+    elasticsearch:
+      cluster-name: application
+      cluster-nodes: 127.0.0.1:9300
+
+
+#  elasticsearch:
+#    cluster:
+#      name: application
+#      host: 127.0.0.1
+#      port: 9200
+
+
+
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/search?useSSL=false&2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
